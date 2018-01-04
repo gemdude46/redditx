@@ -17,7 +17,7 @@ bot = praw.Reddit('redditx')
 
 sub = bot.subreddit('all')
 
-blacklisted_objects = {'silver', 'gold', 'garlic'}
+blacklisted_objects = {'bronze', 'silver', 'gold', 'garlic'}
 
 if not os.path.isdir('cache'):
 	os.mkdir('cache')

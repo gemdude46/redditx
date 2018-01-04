@@ -135,7 +135,7 @@ def handle(comment):
 		/u/{usr} has received {hist}. (given by /u/{giver}) **[info](https://github.com/gemdude46/redditx)**
 	''').format(what=what, nani=what.replace('_', ' ').capitalize(), usr=who.name, giver=comment.author.name, hist=addandgethist(who, what))
 
-	print(post)
+	comment.reply(post)
 
 def create_image(what):
 	if what not in cached_objects:

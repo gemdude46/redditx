@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd /root/redditx/ || exit 1
+
 log=log
 
 while true; do

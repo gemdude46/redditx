@@ -130,10 +130,10 @@ def handle(comment):
 	create_image(what)
 
 	post = textwrap.dedent('''
-		**[Here's your Reddit {what}, {usr}!]()**
+		**[Here's your Reddit {nani}, {usr}!](http://interwebs.cf/reddit-x-bot/{what}.png)**
 
 		/u/{usr} has received {hist}. (given by /u/{giver}) **[info](https://github.com/gemdude46/redditx)**
-	''').format(what=what.capitalize(), usr=who.name, giver=comment.author.name, hist=addandgethist(who, what))
+	''').format(what=what, nani=what.replace('_', ' ').capitalize(), usr=who.name, giver=comment.author.name, hist=addandgethist(who, what))
 
 	print(post)
 
